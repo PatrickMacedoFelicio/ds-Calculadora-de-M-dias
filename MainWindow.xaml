@@ -1,0 +1,28 @@
+﻿<Window x:Class="Aula_01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aula_01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF25B28B" Offset="1"/>
+                <GradientStop Color="#FF37C19B" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Rectangle HorizontalAlignment="Center" Height="366" Stroke="White" VerticalAlignment="Center" Width="398" RadiusX="22.5" RadiusY="22.5" Fill="White"/>
+        <Label Content="Login" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" FontSize="40" FontWeight="Bold"/>
+        <TextBox x:Name="txt_email" HorizontalAlignment="Center" Margin="0,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" Background="#FFCACCD1" BorderBrush="#FFCACCD1" FontSize="16"/>
+        <Label Content="E-mail" HorizontalAlignment="Left" Margin="229,124,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Senha" HorizontalAlignment="Left" Margin="229,0,0,0" VerticalAlignment="Center" FontWeight="Bold" FontSize="20"/>
+        <Button x:Name="bt_logar" Content="Login" HorizontalAlignment="Center" Margin="0,377,0,0" VerticalAlignment="Top" Height="54" Width="108" Background="#FF5AEEC5" BorderBrush="#FF5AEEC5" FontSize="16" FontWeight="Bold" Click="bt_logar_Click"/>
+        <Button x:Name="bt_fechar" Content="fechar" HorizontalAlignment="Left" Margin="688,386,0,0" VerticalAlignment="Top" FontSize="18" Height="54" Width="102" Click="bt_fechar_Click" FontWeight="Bold" Background="White" BorderBrush="White"/>
+        <TextBox x:Name="txt_senha" HorizontalAlignment="Center" Margin="0,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" Background="#FFCACCD1" BorderBrush="#FFCACCD1" FontSize="16"/>
+        <Label Content="Você ainda não possui cadastro?" HorizontalAlignment="Center" Margin="0,287,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="16"/>
+        <Button x:Name="bt_cadastrar" Content="Cadastre-se" HorizontalAlignment="Center" Margin="0,322,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="33" Width="108" BorderBrush="#FFD4D4D4" Background="#FFD4D4D4" Click="bt_cadastrar_Click"/>
+
+    </Grid>
+</Window>
